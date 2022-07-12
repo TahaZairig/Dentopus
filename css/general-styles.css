@@ -33,7 +33,6 @@
   --fs-button-small: var(--fs-extra-small);
   --fs-button-medium: var(--fs-small);
   --fs-button-large: var(--fs-medium);
-  --fs-nav: var(--fs-extra-small);
 
 }
 
@@ -70,14 +69,19 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-html,
 body {
-  height: 100%;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
 }
 
 /* Make images easier to work with */
@@ -95,12 +99,7 @@ select {
   font: inherit;
 }
 
-h1 {
-  font-size: var(--fs-large);
-  font-weight: var(--fw-bold);
-  color: var(--blue-900-primary);
-  line-height: 4.031rem;
-}
+
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -116,4 +115,51 @@ h1 {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* nav */
+nav {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(211, 211, 211, 0.2);
+}
+
+nav button {
+  font-size: var(--fs-button-small);
+  border-radius: 5px;
+  padding: .8rem 2.1rem;
+  transition: .3s all ease-in-out;
+}
+
+/* SVG */
+#logo {
+  width: 180px;
+  height: auto;
+}
+
+#cloud {
+  width: 180px;
+  height: auto;
+}
+
+#octopus {
+  width: 524px;
+  height: auto;
+}
+
+#small-cloud {
+  width: 76px;
+  height: auto;
+}
+
+#waved-cloud {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+#waves {
+  width: 1512px;
+  height: auto;
 }

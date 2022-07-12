@@ -2,5 +2,6 @@
 import '@popperjs/core'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './style.css'
-import './main.css'
+import './css/main.css'
+import './css/general-styles.css'
+import './css/responsive.css'
