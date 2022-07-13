@@ -143,6 +143,12 @@ h4 {
   color: var(--blue-900-primary);
 }
 
+h5 {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-semi-bold);
+  color: var(--blue-900-primary);
+}
+
 p {
   font-size: var(--fs-medium);
   font-weight: var(--fw-light);
@@ -198,9 +204,19 @@ p {
 
 }
 
+#gray-waves {
+  width: 100%;
+  height: auto;
+}
 
+#gray-waves-bottom {
+  width: 100%;
+  height: auto;
+}
 
-
+#salle-dattent {
+  width: 90px;
+}
 
 
 
