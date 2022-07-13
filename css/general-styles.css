@@ -74,6 +74,26 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 a,
 a:hover {
   text-decoration: none;
@@ -93,33 +113,43 @@ select {
   font: inherit;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+
+/* ********************* */
+/*     GENERAL STYLES    */
+/* ********************* */
+
+h1 {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+  color: var(--blue-900-primary);
 }
 
-/* nav */
-nav {
-  background: #fff;
-  box-shadow: 0 2px 4px 0 rgba(211, 211, 211, 0.2);
+h2 {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+  color: var(--blue-900-primary);
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
+h3 {
+  font-size: var(--fs-semi-large);
+  font-weight: var(--fw-medium);
+  color: var(--blue-300-secondary);
 }
+
+h4 {
+  font-size: var(--fs-extra-large);
+  font-weight: var(--fw-bold);
+  color: var(--blue-900-primary);
+}
+
+p {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-light);
+  color: var(--gray-900);
+}
+
+
 
 /* SVG */
 #logo {
@@ -159,41 +189,22 @@ nav {
 #waves {
   width: 100%;
   height: auto;
-  position: absolute;
+}
+
+#smile-face,
+#done,
+#cabinet {
+  width: 5rem;
+
 }
 
 
-/* Elements */
 
-button,
-input[type="submit"],
-input[type="reset"] {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
 
-h3 {
-  font-size: var(--fs-semi-large);
-  font-weight: var(--fw-medium);
-  color: var(--blue-300-secondary);
-}
 
-h1 {
-  font-size: var(--fs-large);
-  font-weight: var(--fw-bold);
-  color: var(--blue-900-primary);
-}
 
-p {
-  font-size: var(--fs-medium);
-  font-weight: var(--fw-light);
-  color: var(--gray-900);
-}
+
+
 
 
 

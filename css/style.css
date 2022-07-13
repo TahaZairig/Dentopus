@@ -1,6 +1,10 @@
 /* ********************* */
 /*      navigation       */
 /* ********************* */
+nav {
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(211, 211, 211, 0.2);
+}
 
 
 /* navbar toggler */
@@ -150,9 +154,6 @@ header button:hover {
     left: 40%;
 }
 
-#waves {
-    top: 39rem;
-}
 
 #phone {
     width: 45rem;
@@ -160,4 +161,13 @@ header button:hover {
     top: 12.5rem;
     position: absolute;
     left: 50%;
+}
+
+
+/* ********************* */
+/*      Section -1       */
+/* ********************* */
+
+.section1 {
+    margin-top: 6rem;
 }
