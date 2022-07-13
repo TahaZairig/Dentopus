@@ -1,0 +1,163 @@
+/* ********************* */
+/*      navigation       */
+/* ********************* */
+
+
+/* navbar toggler */
+.lines {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all .2s;
+    background: var(--blue-900-primary);
+}
+
+.navbar-toggler .line1 {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .line2 {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .line3 {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .line1 {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .line2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .line3 {
+    transform: rotate(0);
+}
+
+/* nav items */
+a.nav-link {
+    font-size: var(--fs-extra-small);
+    color: var(--blue-900-primary);
+    margin-left: .9rem;
+    margin-right: .9rem;
+}
+
+a.nav-link:hover {
+    color: var(--blue-300-secondary);
+}
+
+/* Me connecter */
+.btn1 button:nth-child(1) {
+    color: var(--blue-300-secondary);
+    border: 1px solid var(--blue-300-secondary);
+    background: #fff;
+}
+
+/* Crée un compte */
+.btn1 button:nth-child(2) {
+    color: #fff;
+    border: 1px solid var(--blue-300-secondary);
+    background: var(--blue-300-secondary);
+}
+
+.btn1 button:nth-child(1):hover,
+.btn1 button:nth-child(2):hover {
+    transform: translateY(-1.1px);
+    box-shadow: 0 14px 8px rgba(228, 228, 228, 0.20), 0 10px 10px rgba(228, 228, 228, 0.2);
+}
+
+nav button {
+    font-size: var(--fs-button-small);
+    border-radius: 5px;
+    padding: .8rem 2.1rem;
+    transition: .2s all ease-in-out;
+}
+
+
+
+
+
+
+/* ********************* */
+/*      Header           */
+/* ********************* */
+
+header {
+    margin-top: 12rem;
+}
+
+header p {
+    line-height: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    line-height: 2rem;
+}
+
+header button {
+    padding: .8rem 2.1rem;
+    background-color: var(--blue-900-primary);
+    border: 1px solid var(--blue-900-primary);
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+
+header button:hover {
+    transform: translateY(-1.2px);
+    box-shadow: 0 14px 8px rgba(228, 228, 228, 0.20), 0 10px 10px rgba(228, 228, 228, 0.2);
+    transition: .2s all ease;
+}
+
+
+
+/* Design */
+.cloud1 {
+    top: 8.6rem;
+    left: 45%;
+    animation: floating1 10s infinite ease;
+}
+
+.cloud2 {
+    top: 13.5rem;
+    left: 83%;
+    animation: floating2 10s infinite ease;
+    animation-delay: 1s;
+}
+
+.cloud3 {
+    top: 28rem;
+    left: 46%;
+    animation: floating2 20s infinite ease;
+    animation-delay: 1s;
+}
+
+#octopus {
+    top: 24rem;
+    left: 40%;
+}
+
+#waves {
+    top: 39rem;
+}
+
+#phone {
+    width: 45rem;
+    height: 36rem;
+    top: 12.5rem;
+    position: absolute;
+    left: 50%;
+}
