@@ -181,7 +181,7 @@ p {
   width: 76px;
   height: auto;
   position: absolute;
-  z-index: 2;
+  z-index: -10;
 }
 
 #waved-cloud {
@@ -192,7 +192,8 @@ p {
   z-index: -10;
 }
 
-#waves {
+#waves,
+#waves-section4 {
   width: 100%;
   height: auto;
 }
@@ -218,7 +219,10 @@ p {
   width: 90px;
 }
 
-
+#laptop {
+  width: 40rem;
+  height: 30.8rem;
+}
 
 
 
