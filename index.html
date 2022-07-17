@@ -15,7 +15,7 @@
 <body>
 
   <!-- ========================== -->
-  <!-- =       NAVIGATION       = -->
+  <!-- =       NAVIGATION         -->
   <!-- ========================== -->
 
   <nav class="navbar fixed-top navbar-expand-lg">
@@ -65,7 +65,7 @@
   </nav>
 
   <!-- ========================== -->
-  <!-- =       HEADER           = -->
+  <!-- =       HEADER             -->
   <!-- ========================== -->
 
   <header>
@@ -84,18 +84,22 @@
     </div>
 
     <!-- design -->
-    <img id="waved-cloud" src="svg/waved-cloud.svg">
-    <img id="cloud" class="cloud1" src="svg/cloud.svg">
-    <img id="cloud" class="cloud2" src="svg/cloud.svg">
-    <img id="small-cloud" class="cloud3" src="svg/cloud.svg">
-    <img id="octopus" src="svg/octopus.svg">
-    <img id="waves" src="svg/waves.svg">
-    <img src="img/image1.png" id="phone">
+    <div>
+
+      <img id="waved-cloud" src="svg/waved-cloud.svg">
+      <img id="cloud" class="cloud1" src="svg/cloud.svg">
+      <img id="cloud" class="cloud2" src="svg/cloud.svg">
+      <img id="small-cloud" class="cloud3" src="svg/cloud.svg">
+      <img id="octopus" src="svg/octopus.svg">
+      <img id="waves" src="svg/waves.svg">
+      <img src="svg/phone.svg" id="phone">
+
+    </div>
 
   </header>
 
   <!-- ========================== -->
-  <!-- =       SECTION  1       = -->
+  <!--         SECTION  1         -->
   <!-- ========================== -->
 
   <section class="section1">
@@ -106,7 +110,7 @@
           <h2>Des experts du monde entier nous font confiance.</h2>
         </div>
 
-        <div class="col-lg-5 ms-auto row d-flex justify-content-start align-items-center">
+        <div class="col ms-auto row d-flex justify-content-start align-items-center">
 
           <!-- smile face -->
           <div class="m-3 d-flex justify-content-start">
@@ -141,18 +145,19 @@
   </section>
 
   <!-- ========================== -->
-  <!-- =       SECTION  2       = -->
+  <!--         SECTION  2         -->
   <!-- ========================== -->
-
 
   <img src="svg/gray-waves.svg">
   <section class="section2">
     <div class="container text-center">
-      <h3>Dontopus permet à quoi ?</h3>
-      <h2>Trouvez la solution adaptée à vos besoins.</h2>
+      <div class="mb-5">
+        <h3>Comment Dentopus peut vous aider ?</h3>
+        <h2>Trouvez la solution adaptée à vos besoins.</h2>
+      </div>
 
       <!-- cards -->
-      <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center pt-5">
         <!-- card 1 -->
         <div class="col-lg-3 col-md-4 col-8 my-3">
           <div class="carte">
@@ -268,18 +273,16 @@
 
       </div>
 
-
     </div>
   </section>
   <img src="svg/gray-waves-bottom.svg">
 
   <!-- ========================== -->
-  <!-- =       SECTION  3       = -->
+  <!--         SECTION  3         -->
   <!-- ========================== -->
 
   <section class="section3">
     <div class="container">
-
       <div class="row align-items-center my-5">
         <div class="col-lg-6">
           <h3 class="my-4">Avantages du cloud</h3>
@@ -295,96 +298,121 @@
           <img src="svg/laptop.svg" id="laptop">
         </div>
       </div>
+    </div>
 
+    <div class="container">
+      <div class="row row-deck row-cards row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-1">
 
-      <div class="row d-flex justify-content-center py-5 my-5">
+        <!-- carte cloud -->
+        <div class="col">
+          <div class="m-lg-4 m-2">
 
+            <div class="row carte2 d-flex justify-content-between align-items-center">
+              <div class="col-3">
+                <img src="svg/cloud-icon.svg" class="ms-md-4 ms-lg-2 ms-xl-4 ms-sm-3">
+              </div>
 
+              <div class="col-8 my-4 pt-3" style="height: 80px;">
+                <h5>Solution en cloud</h5>
+                <p>Un taux de disponibilité mensuelle de 99,90%</p>
+              </div>
 
-        <!-- carte -->
-        <div class="m-3 col-lg-5 carte2 row d-flex justify-content-center align-items-center">
+              <div class="col-1">
+                <img src="svg/arow.svg">
+              </div>
+            </div>
 
-          <div class="col-3">
-            <img src="svg/cloud-icon.svg">
-          </div>
-
-          <div class="col-8 mt-3">
-            <h5>Solution en cloud</h5>
-            <p>Un taux de disponibilité mensuelle de 99,90%</p>
-          </div>
-
-          <div class="col-1">
-            <img src="svg/arow.svg">
-          </div>
-        </div>
-
-        <!-- carte -->
-        <div class="m-3 col-lg-5 carte2 row d-flex justify-content-center align-items-center">
-
-          <div class="col-3">
-            <img src="svg/cloud-icon.svg">
-          </div>
-
-          <div class="col-8 mt-3">
-            <h5>Solution en cloud</h5>
-            <p>Un taux de disponibilité mensuelle de 99,90%</p>
-          </div>
-
-          <div class="col-1">
-            <img src="svg/arow.svg">
           </div>
         </div>
 
-        <!-- carte -->
-        <div class="m-3 col-lg-5 carte2 row d-flex justify-content-center align-items-center">
+        <!-- carte stockage -->
+        <div class="col">
+          <div class="m-lg-4 m-2">
 
-          <div class="col-3">
-            <img src="svg/cloud-icon.svg">
-          </div>
+            <div class="row carte2 d-flex justify-content-between align-items-center">
+              <div class="col-3">
+                <img src="svg/stockage-icon.svg" class="ms-md-4 ms-lg-2 ms-xl-4 ms-sm-3">
+              </div>
 
-          <div class="col-8 mt-3">
-            <h5>Solution en cloud</h5>
-            <p>Un taux de disponibilité mensuelle de 99,90%</p>
-          </div>
+              <div class="col-8 my-4 pt-3" style="height: 80px;">
+                <h5>Stockage des fichiers</h5>
+                <p>Accée aux fichiers patients (Documents, X-ray) </p>
+              </div>
 
-          <div class="col-1">
-            <img src="svg/arow.svg">
-          </div>
-        </div>
+              <div class="col-1">
+                <img src="svg/arow.svg">
+              </div>
+            </div>
 
-        <!-- carte -->
-        <div class="m-3 col-lg-5 carte2 row d-flex justify-content-center align-items-center">
-
-          <div class="col-3">
-            <img src="svg/cloud-icon.svg">
-          </div>
-
-          <div class="col-8 mt-3">
-            <h5>Solution en cloud</h5>
-            <p>Un taux de disponibilité mensuelle de 99,90%</p>
-          </div>
-
-          <div class="col-1">
-            <img src="svg/arow.svg">
           </div>
         </div>
 
+        <!-- carte https -->
+        <div class="col">
+          <div class="m-lg-4 m-2">
 
+            <div class="row carte2 d-flex justify-content-between align-items-center">
+              <div class="col-3">
+                <img src="svg/https-icon.svg" class="ms-md-4 ms-lg-2 ms-xl-4 ms-sm-3">
+              </div>
+
+              <div class="col-8 my-4 pt-3" style="height: 80px;">
+                <h5>HTTPS/SSL</h5>
+                <p>Un traffic via HTTPS crypté de bout en bout </p>
+              </div>
+
+              <div class="col-1">
+                <img src="svg/arow.svg">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- carte MFA -->
+        <div class="col">
+          <div class="m-lg-4 m-2">
+
+            <div class="row carte2 d-flex justify-content-between align-items-center">
+              <div class="col-3">
+                <img src="svg/MFA-icon.svg" class="ms-md-4 ms-lg-2 ms-xl-4 ms-sm-3">
+              </div>
+
+              <div class="col-8 my-4 pt-3" style="height: 80px;">
+                <h5>MFA Two factor</h5>
+                <p>Double authentification pour une connexion ultra sécurisé</p>
+              </div>
+
+              <div class="col-1">
+                <img src="svg/arow.svg">
+              </div>
+            </div>
+
+          </div>
+        </div>
 
 
       </div>
-
-
     </div>
+
   </section>
 
+  <!-- ========================== -->
+  <!--         SECTION  4         -->
+  <!-- ========================== -->
+
   <img src="svg/waves-section4.svg">
+  <section class="section4">
+    <div class="container text-center">
+      <h2>Nos offres</h2>
+      <h3>Trouvez la formule adaptée à vos besoins</h3>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </section>
 
 
 
 
-
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <script type="module" src="/main.js"></script>
 </body>
 

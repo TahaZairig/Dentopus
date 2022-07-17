@@ -1,41 +1,3 @@
-:root {
-  /* colos */
-  --blue-900-primary: #004366;
-  --blue-600: #4E9CDB;
-  --blue-300-secondary: #19C6DB;
-  --blue-100: #48EBDC;
-  --gray-900: #8F8F8F;
-  --gray-700: #849DB7;
-  --gray-100: #E2F0FB;
-
-  /* font-weight */
-  font-family: Poppins, 'sans-serif';
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semi-bold: 600;
-  --fw-bold: 700;
-
-  /* 14px - 0.875rem 
-   16px - 1rem
-   18px - 1.125rem
-   24px - 1.5rem
-   43px - 2.75rem
-   60px - 3.75rem*/
-  --fs-extra-large: 3.75rem;
-  --fs-large: 2.75rem;
-  --fs-semi-large: 1.5rem;
-  --fs-medium: 1.125rem;
-  --fs-small: 1rem;
-  --fs-extra-small: 0.875rem;
-
-  /* buttons */
-  --fs-button-small: var(--fs-extra-small);
-  --fs-button-medium: var(--fs-small);
-  --fs-button-large: var(--fs-medium);
-
-}
-
 @font-face {
   src: url(./font/Poppins-Bold.woff);
   src: url(./font/Poppins-SemiBold.woff);
@@ -114,6 +76,45 @@ select {
 }
 
 
+
+
+:root {
+  /* colos */
+  --blue-900-primary: #004366;
+  --blue-600: #4E9CDB;
+  --blue-300-secondary: #19C6DB;
+  --blue-100: #48EBDC;
+  --gray-900: #8F8F8F;
+  --gray-700: #849DB7;
+  --gray-100: #E2F0FB;
+
+  /* font-weight */
+  font-family: Poppins, 'sans-serif';
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  /* 14px - 0.875rem 
+   16px - 1rem
+   18px - 1.125rem
+   24px - 1.5rem
+   43px - 2.75rem
+   60px - 3.75rem*/
+  --fs-extra-large: 3.75rem;
+  --fs-large: 2.75rem;
+  --fs-semi-large: 1.5rem;
+  --fs-medium: 1.125rem;
+  --fs-small: 1rem;
+  --fs-extra-small: 0.875rem;
+
+  /* buttons */
+  --fs-button-small: var(--fs-extra-small);
+  --fs-button-medium: var(--fs-small);
+  --fs-button-large: var(--fs-medium);
+
+}
 
 /* ********************* */
 /*     GENERAL STYLES    */
@@ -224,7 +225,10 @@ p {
   height: 30.8rem;
 }
 
-
+#phone {
+  width: 47.75rem;
+  height: 38.188rem;
+}
 
 
 

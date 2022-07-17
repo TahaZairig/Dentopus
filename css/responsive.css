@@ -20,6 +20,26 @@
 
 
 
+
+@media (max-width: 1200px) {
+    .cloud3 {
+        top: 32rem;
+        left: 40%;
+    }
+
+    #phone {
+        width: 42rem;
+        height: 33rem;
+        left: 50%;
+    }
+
+    #octopus {
+        width: 27.75rem;
+        top: 27rem;
+    }
+
+}
+
 @media (max-width: 1130px) {
 
     /* ********************* */
@@ -40,6 +60,7 @@
 }
 
 @media (max-width: 991px) {
+
     a.nav-link {
         text-align: center;
     }
@@ -51,32 +72,17 @@
     #octopus {
         display: none;
     }
+
 }
-
-@media (max-width: 1200px) {
-    .cloud3 {
-        top: 32rem;
-        left: 40%;
-    }
-
-    #phone {
-        width: 42rem;
-        height: 33rem;
-        left: 50%;
-    }
-
-    #octopus {
-        width: 27.75rem;
-        top: 27rem;
-    }
-}
-
-
 
 @media (max-width: 767px) {
     #waves {
         top: 41rem;
     }
+}
 
-
+@media (max-width: 576px) {
+    .perso-container {
+        width: 540px;
+    }
 }
