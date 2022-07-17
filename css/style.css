@@ -271,3 +271,93 @@ section {
     line-height: 50px;
     color: #fff;
 }
+
+.section4 .col {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.carte3 {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 67, 102, 0.1);
+    transition: all .2s ease-in-out;
+}
+
+.carte3:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(4, 43, 52, 0.324);
+    cursor: pointer;
+}
+
+
+.carte3 h4 {
+    color: var(--blue-900-primary);
+    text-align: center;
+    padding: 22px 40px;
+    font-size: var(--fs-semi-large);
+    line-height: 36px;
+    font-weight: var(--fs-medium);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+
+.recommanded {
+    color: #fff !important;
+    background: var(--blue-900-primary);
+    border: 1px solid var(--blue-900-primary);
+}
+
+/* ------------------------- */
+
+.carte3 h5 {
+    color: var(--blue-300-secondary);
+    font-size: 2.25rem;
+    font-weight: var(--fw-semi-bold);
+}
+
+
+.carte3 li {
+    font-size: var(--fs-medium);
+    color: var(--blue-900-primary);
+    font-weight: var(--fw-regular);
+    line-height: 27px;
+}
+
+.carte3 ul {
+    list-style: none;
+}
+
+.carte3 ul li::before {
+    content: ".";
+    font-size: 3rem;
+    margin-bottom: -1rem;
+    color: var(--blue-300-secondary);
+    font-weight: bold;
+    display: inline-block;
+    width: 2.5rem;
+}
+
+.carte3 button {
+    text-decoration: none;
+    color: var(--blue-900-primary);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-medium);
+    line-height: 27px;
+    border: 1px solid var(--blue-900-primary);
+    border-radius: 4px;
+    padding: .8rem 2.1rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s ease-in-out;
+}
+
+.carte3 button:hover {
+    background: var(--blue-900-primary);
+    color: #fff;
+}
