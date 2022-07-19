@@ -362,10 +362,9 @@ section {
     color: #fff;
 }
 
-
-
-
-
+/* ********************* */
+/*      Section  5       */
+/* ********************* */
 
 /* slider */
 .slider,
@@ -409,7 +408,6 @@ section {
     border-radius: 10px;
     background: #fff;
     box-shadow: 0px 0px 20px rgba(0, 66, 99, 0.15);
-    margin-left: 20px;
 }
 
 .carte4 h5 {
@@ -422,4 +420,71 @@ section {
     font-weight: var(--fw-light);
     font-size: var(--fs-extra-extra-small);
     line-height: 21px;
+}
+
+
+/* ********************* */
+/*      Section  6       */
+/* ********************* */
+
+.section6 {
+    background: #E2F0FB;
+    margin-top: -5%;
+    margin-bottom: -5%;
+}
+
+.section6 button {
+    text-decoration: none;
+    color: var(--blue-900-primary);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-medium);
+    line-height: 27px;
+    border: 1px solid var(--blue-900-primary);
+    border-radius: 4px;
+    padding: .8rem 2.1rem;
+    transition: all .2s ease-in-out;
+}
+
+.section6 button:hover {
+    color: #E1EFFA;
+    background: var(--blue-900-primary);
+}
+
+
+
+
+
+
+
+.carte5 {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 67, 102, 0.1);
+    transition: all .2s ease-in-out;
+}
+
+.carte5:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(4, 43, 52, 0.324);
+    cursor: pointer;
+}
+
+.carte5 img {
+    width: 110% !important;
+    padding: 0px;
+}
+
+.carte5 span {
+    font-size: var(--fs-extra-extra-small);
+    color: var(--blue-600);
+    background: var(--gray-100);
+    margin-right: 17px;
+    margin-top: 22px;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+.carte5 h5 {
+    text-align: start;
+
 }

@@ -75,7 +75,14 @@ select {
   font: inherit;
 }
 
-
+/*
+   12px - 0.75rem
+   14px - 0.875rem 
+   16px - 1rem
+   18px - 1.125rem
+   24px - 1.5rem
+   43px - 2.75rem
+   60px - 3.75rem*/
 
 
 :root {
@@ -96,14 +103,7 @@ select {
   --fw-semi-bold: 600;
   --fw-bold: 700;
 
-  /*
-   12px - 0.75rem
-   14px - 0.875rem 
-   16px - 1rem
-   18px - 1.125rem
-   24px - 1.5rem
-   43px - 2.75rem
-   60px - 3.75rem*/
+  /* font-size */
   --fs-extra-large: 3.75rem;
   --fs-large: 2.75rem;
   --fs-semi-large: 1.5rem;
@@ -116,12 +116,7 @@ select {
   --fs-button-small: var(--fs-extra-small);
   --fs-button-medium: var(--fs-small);
   --fs-button-large: var(--fs-medium);
-
 }
-
-/* ********************* */
-/*     GENERAL STYLES    */
-/* ********************* */
 
 h1 {
   font-size: var(--fs-large);
@@ -162,12 +157,12 @@ p {
 
 
 /* SVG */
-#logo {
+.logo {
   width: 180px;
   height: auto;
 }
 
-#cloud {
+.cloud {
   width: 180px;
   height: auto;
   position: absolute;
@@ -181,14 +176,14 @@ p {
   z-index: -8;
 }
 
-#small-cloud {
+.small-cloud {
   width: 76px;
   height: auto;
   position: absolute;
   z-index: -10;
 }
 
-#waved-cloud {
+.waved-cloud {
   width: 100%;
   height: auto;
   position: absolute;
@@ -196,34 +191,34 @@ p {
   z-index: -10;
 }
 
-#waves,
-#waves-section4 {
+.waves,
+.waves-section4 {
   width: 100%;
   height: auto;
 }
 
-#smile-face,
-#done,
-#cabinet {
+.smile-face,
+.done,
+.cabinet {
   width: 5rem;
 
 }
 
-#gray-waves {
+.gray-waves {
   width: 100%;
   height: auto;
 }
 
-#gray-waves-bottom {
+.gray-waves-bottom {
   width: 100%;
   height: auto;
 }
 
-#salle-dattent {
+.salle-dattent {
   width: 90px;
 }
 
-#laptop {
+.laptop {
   width: 40rem;
   height: 30.8rem;
 }
@@ -231,6 +226,14 @@ p {
 #phone {
   width: 47.75rem;
   height: 38.188rem;
+}
+
+.waves-section6 {
+  width: 100%;
+}
+
+.waves-bottom-section6 {
+  width: 100%;
 }
 
 
