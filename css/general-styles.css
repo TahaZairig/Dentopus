@@ -96,7 +96,9 @@ select {
   --fw-semi-bold: 600;
   --fw-bold: 700;
 
-  /* 14px - 0.875rem 
+  /*
+   12px - 0.75rem
+   14px - 0.875rem 
    16px - 1rem
    18px - 1.125rem
    24px - 1.5rem
@@ -108,6 +110,7 @@ select {
   --fs-medium: 1.125rem;
   --fs-small: 1rem;
   --fs-extra-small: 0.875rem;
+  --fs-extra-extra-small: 0.75rem;
 
   /* buttons */
   --fs-button-small: var(--fs-extra-small);
