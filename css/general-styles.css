@@ -183,6 +183,8 @@ p {
   z-index: -10;
 }
 
+
+
 .waved-cloud {
   width: 100%;
   height: auto;
@@ -197,13 +199,6 @@ p {
   height: auto;
 }
 
-.smile-face,
-.done,
-.cabinet {
-  width: 5rem;
-
-}
-
 .gray-waves {
   width: 100%;
   height: auto;
@@ -213,6 +208,23 @@ p {
   width: 100%;
   height: auto;
 }
+
+.waves-section6 {
+  width: 100%;
+}
+
+.waves-bottom-section6 {
+  width: 100%;
+}
+
+
+.smile-face,
+.done,
+.cabinet {
+  width: 5rem;
+
+}
+
 
 .salle-dattent {
   width: 90px;
@@ -226,14 +238,6 @@ p {
 #phone {
   width: 47.75rem;
   height: 38.188rem;
-}
-
-.waves-section6 {
-  width: 100%;
-}
-
-.waves-bottom-section6 {
-  width: 100%;
 }
 
 

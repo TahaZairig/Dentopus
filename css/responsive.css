@@ -45,7 +45,7 @@
     /* ********************* */
     /*      navigation       */
     /* ********************* */
-    #logo {
+    .logo {
         width: 160px;
     }
 
@@ -66,23 +66,54 @@
     }
 
     /* design */
-    #cloud,
+    .cloud,
     #phone,
-    #small-cloud,
+    .small-cloud,
     #octopus {
         display: none;
     }
 
-}
 
-@media (max-width: 767px) {
-    #waves {
-        top: 41rem;
+
+    .gray-waves,
+    .waves,
+    .waves-section4,
+    .bottom-waves-sction4,
+    .waves-section6,
+    .waves-bottom-section6,
+    .gray-waves-bottom {
+        max-width: 200%;
+        width: 200%;
     }
-}
 
-@media (max-width: 576px) {
-    .perso-container {
-        width: 540px;
+    .section6 .title {
+        margin-top: -50px;
+    }
+
+    .section-gap {
+        height: 40px;
+
+    }
+
+    @media (max-width: 767px) {
+        .waves {
+            top: 41rem;
+        }
+
+        header {
+            margin-top: 7rem;
+        }
+
+    }
+
+    @media (max-width: 596px) {
+        .carte2 {
+            width: 400px;
+        }
+
+        .card-deck {
+            display: flex;
+            justify-content: center;
+        }
     }
 }

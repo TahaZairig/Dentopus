@@ -450,12 +450,6 @@ section {
     background: var(--blue-900-primary);
 }
 
-
-
-
-
-
-
 .carte5 {
     background: #fff;
     border-radius: 10px;
@@ -486,5 +480,28 @@ section {
 
 .carte5 h5 {
     text-align: start;
+}
 
+.section-gap {
+    height: 150px;
+    background: #F9FCFE;
+    margin-top: -5%;
+}
+
+/* ********************* */
+/*      FOOTER           */
+/* ********************* */
+
+
+footer {
+    height: 95px;
+    background-color: #fff;
+}
+
+footer p {
+    font-size: var(--fs-extra-small);
+    font-weight: var(--fw-regular);
+    line-height: 21px;
+    color: var(--gray-700);
+    margin: 10px;
 }
