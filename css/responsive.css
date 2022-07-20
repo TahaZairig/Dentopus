@@ -73,47 +73,35 @@
         display: none;
     }
 
-
-
-    .gray-waves,
-    .waves,
-    .waves-section4,
-    .bottom-waves-sction4,
-    .waves-section6,
-    .waves-bottom-section6,
-    .gray-waves-bottom {
-        max-width: 200%;
-        width: 200%;
-    }
-
-    .section6 .title {
+    .section6.title {
         margin-top: -50px;
     }
 
     .section-gap {
         height: 80px;
-        margin-top: -80px;
     }
 
-    @media (max-width: 767px) {
-        .waves {
-            top: 41rem;
-        }
 
-        header {
-            margin-top: 7rem;
-        }
+}
 
+@media (max-width: 767px) {
+    .waves {
+        top: 41rem;
     }
 
-    @media (max-width: 596px) {
-        .carte2 {
-            width: 400px;
-        }
+    header {
+        margin-top: 7rem;
+    }
 
-        .card-deck {
-            display: flex;
-            justify-content: center;
-        }
+}
+
+@media (max-width: 596px) {
+    .carte2 {
+        width: 400px;
+    }
+
+    .card-deck {
+        display: flex;
+        justify-content: center;
     }
 }

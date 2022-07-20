@@ -71,11 +71,11 @@ a.nav-link:hover {
     background: var(--blue-300-secondary);
 }
 
-.btn1 button:nth-child(1):hover,
+/* .btn1 button:nth-child(1):hover,
 .btn1 button:nth-child(2):hover {
     transform: translateY(-1.1px);
     box-shadow: 0 14px 8px rgba(228, 228, 228, 0.20), 0 10px 10px rgba(228, 228, 228, 0.2);
-}
+} */
 
 nav button {
     font-size: var(--fs-button-small);
@@ -118,12 +118,26 @@ header button {
     color: #fff;
     border-radius: 5px;
     margin-bottom: 3rem;
+    transition: .2s all ease;
 }
 
 header button:hover {
-    transform: translateY(-1.2px);
-    box-shadow: 0 14px 8px rgba(228, 228, 228, 0.20), 0 10px 10px rgba(228, 228, 228, 0.2);
-    transition: .2s all ease;
+    transform: translateY(-.1px);
+}
+
+
+
+nav button:hover {
+    transform: translateY(-.1px);
+}
+
+nav button:hover::after,
+nav button:hover::before {
+    border-color: var(--blue-300-secondary);
+}
+
+.section6 button:hover {
+    transform: translateY(-.1px);
 }
 
 
@@ -357,10 +371,10 @@ section {
     transition: all .2s ease-in-out;
 }
 
-.carte3 button:hover {
+/* .carte3 button:hover {
     background: var(--blue-900-primary);
     color: #fff;
-}
+} */
 
 /* ********************* */
 /*      Section  5       */
@@ -445,10 +459,10 @@ section {
     transition: all .2s ease-in-out;
 }
 
-.section6 button:hover {
+/* .section6 button:hover {
     color: #E1EFFA;
     background: var(--blue-900-primary);
-}
+} */
 
 .carte5 {
     background: #fff;

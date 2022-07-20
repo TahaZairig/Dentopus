@@ -240,6 +240,42 @@ p {
   height: 38.188rem;
 }
 
+/* button hover */
+button::after,
+button::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: .5s;
+}
+
+button::after {
+  top: -7.5px;
+  left: -7.5px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+button::before {
+  bottom: -7.5px;
+  right: -7.5px;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+
+button:hover::after,
+button:hover::before {
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  border-color: var(--blue-900-primary);
+  border-radius: 5px;
+}
+
+
+
+
 
 
 /* keyframes */
