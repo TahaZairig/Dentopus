@@ -6,7 +6,6 @@ nav {
     box-shadow: 0 2px 6px 2px rgba(0, 66, 102, 0.12), inset 0 -1px 0 0 #dadce0;
 }
 
-
 /* navbar toggler */
 .lines {
     width: 30px;
@@ -57,11 +56,22 @@ a.nav-link:hover {
     color: var(--blue-300-secondary);
 }
 
+nav button {
+    font-size: var(--fs-button-small);
+    border-radius: 5px;
+    padding: .8rem 2.1rem;
+}
+
 /* Me connecter */
 .btn1 .outline {
     color: var(--blue-300-secondary);
     border: 1px solid var(--blue-300-secondary);
     background: #fff;
+}
+
+.btn1 .outline:hover {
+    background: var(--blue-300-secondary);
+    color: #fff;
 }
 
 /* Crée un compte */
@@ -71,11 +81,9 @@ a.nav-link:hover {
     background: var(--blue-300-secondary);
 }
 
-nav button {
-    font-size: var(--fs-button-small);
-    border-radius: 5px;
-    padding: .8rem 2.1rem;
-    transition: .2s all ease-in-out;
+.btn1 .filled:hover {
+    color: var(--blue-300-secondary);
+    background: #fff;
 }
 
 /* ********************* */
@@ -111,6 +119,24 @@ textarea::placeholder {
     background: #F9FCFE;
 }
 
+/* retour */
+.modal-footer .outline {
+    border-radius: 5px;
+    border: 1px solid var(--blue-900-primary);
+    padding: .8rem 2.1rem;
+}
+
+.modal-footer .outline:hover {
+    background: var(--blue-900-primary);
+    color: #fff;
+}
+
+/* envoyer la demande + crée un compte gratuitement */
+header .filled:hover {
+    color: var(--blue-900-primary);
+    background: #fff;
+}
+
 .modal-body input,
 .modal-body select,
 .modal-body textarea {
@@ -130,11 +156,9 @@ textarea::placeholder {
     box-shadow: 0 0px 10px rgba(25, 200, 219, 0.429);
 }
 
-
 /* ********************* */
 /*      Header           */
 /* ********************* */
-
 header {
     margin-top: 12rem;
 }
@@ -159,39 +183,11 @@ header .filled {
     border: 1px solid var(--blue-900-primary);
     color: #fff;
     border-radius: 5px;
-    transition: .2s all ease;
-}
-
-header .outline {
-    border-radius: 5px;
-    border: 1px solid var(--blue-900-primary);
-    padding: .8rem 2.1rem;
 }
 
 .btn-holder .filled {
     margin-bottom: 3rem;
 }
-
-header button:hover {
-    transform: translateY(-.1px);
-}
-
-
-
-nav button:hover {
-    transform: translateY(-.1px);
-}
-
-nav button:hover::after,
-nav button:hover::before {
-    border-color: var(--blue-300-secondary);
-}
-
-.section6 button:hover {
-    transform: translateY(-.1px);
-}
-
-
 
 /* Design */
 .cloud1 {
@@ -227,12 +223,6 @@ nav button:hover::before {
     left: 50%;
 }
 
-
-
-section {
-    margin-top: 6rem;
-    margin-bottom: 3.25rem;
-}
 
 /* ********************* */
 /*      Section  2       */
@@ -287,7 +277,6 @@ section {
 /* ********************* */
 /*      Section  3       */
 /* ********************* */
-/* card */
 .carte2 {
     background: #fff;
     border-radius: 10px;
@@ -308,6 +297,20 @@ section {
     font-size: var(--fs-medium);
 }
 
+
+.arrow {
+    position: absolute;
+    margin-top: -21px;
+    margin-left: 100px;
+    opacity: 0;
+    transition: .3s all ease-in-out;
+    pointer-events: none;
+}
+
+.section3 a:hover~.arrow {
+    opacity: 1;
+    margin-left: 120px;
+}
 
 /* ********************* */
 /*      Section  4       */
@@ -398,7 +401,7 @@ section {
     margin-bottom: -5%;
 }
 
-.section6 button {
+.section5 button {
     text-decoration: none;
     color: var(--blue-900-primary);
     font-weight: var(--fw-semi-bold);
@@ -407,6 +410,11 @@ section {
     border: 1px solid var(--blue-900-primary);
     border-radius: 4px;
     padding: .8rem 2.1rem;
+}
+
+.section5 button:hover {
+    color: #fff;
+    background: var(--blue-900-primary);
 }
 
 .carte5 {

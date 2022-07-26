@@ -112,4 +112,17 @@ wrapSlider.addEventListener("mouseout", () => {
 start();
 
 
+/* octopus scroll */
+/* var lastScrollPosition = 0;
+window.addEventListener('scroll', function (e) {
+    lastScrollPosition = window.scrollY;
+    var octopus = this.document.getElementById('octopus');
+    var headerHeight = this.document.getElementsByTagName('header').item(0)
+    headerHeight = headerHeight.offsetHeight + 20
+    console.log(lastScrollPosition);
+
+    if (lastScrollPosition < headerHeight) {
+        octopus.style.transform = "translate(" + lastScrollPosition / -2 + "px, " + lastScrollPosition + "px)";
+    }
+}); */
 

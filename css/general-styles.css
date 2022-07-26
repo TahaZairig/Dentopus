@@ -7,6 +7,11 @@
   font-family: Poppins;
 }
 
+section {
+  margin-top: 6rem;
+  margin-bottom: 3.25rem;
+}
+
 *,
 *::before,
 *::after {
@@ -173,6 +178,10 @@ p {
   font-size: var(--fs-medium);
   font-weight: var(--fw-light);
   color: var(--gray-900);
+}
+
+button {
+  transition: all .2s ease-in-out;
 }
 
 *:focus {
