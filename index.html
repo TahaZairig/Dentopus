@@ -51,7 +51,8 @@
               <button class="me-1 ms-4 my-1 outline" type="submit">Me connecter</button>
             </div>
             <div class="btn-holder">
-              <button class="ms-2 my-1 filled" type="submit">Crée un compte</button>
+              <button class="ms-2 my-1 filled" data-bs-toggle="modal" data-bs-target="#myModal" type="submit">Crée un
+                compte</button>
             </div>
           </div>
 
@@ -66,9 +67,9 @@
     <!-- content -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <h3>Solution innovante</h3>
-          <h1>Nous aidons les spécialistes à évoluer, virtuellement</h1>
+          <h1>Votre compagnon pour une meilleure gestion clinique</h1>
           <p>Aider les professionnels dentaires à automatiser et digitaliser toutes les tâches en dehors des actes
             purement cliniques.</p>
           <div class="btn-holder">
@@ -79,13 +80,86 @@
     </div>
 
     <!-- design -->
-    <img class="waved-cloud" src="svg/header/waved-cloud.svg">
-    <img class="cloud cloud1" src="svg/header/cloud.svg">
-    <img class="cloud cloud2" src="svg/header/cloud.svg">
-    <img class="small-cloud cloud3" src="svg/header/cloud.svg">
-    <img id="octopus" src="svg/header/octopus.svg">
-    <img class="waves" src="svg/header/waves.svg">
-    <img src="svg/header/phone.svg" id="phone">
+    <div>
+      <img class="waved-cloud" src="svg/header/waved-cloud.svg">
+      <img class="cloud cloud1" src="svg/header/cloud.svg">
+      <img class="cloud cloud2" src="svg/header/cloud.svg">
+      <img class="small-cloud cloud3" src="svg/header/cloud.svg">
+      <img id="octopus" src="svg/header/octopus.svg">
+      <img class="waves" src="svg/header/waves.svg">
+      <img src="svg/header/phone.svg" id="phone">
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="container">
+              <div class="row row-cols-xl-2 row-cols-1 d-flex justify-content-between">
+
+                <!-- TITRE -->
+                <div class="col ps-5 pt-lg-3">
+                  <h3 class="py-lg-2">Créer mon compte</h3>
+                  <h2 class="py-lg-3">Le cloud est un véritable plus pour accroitre l'agilité et la mobilité de ses
+                    collaborateurs.</h2>
+                  <p class="pt-lg-3">Les solutions cloud sont accessibles à tout moment, depuis n'importe quel support,
+                    via
+                    une simple
+                    connexion internet.</p>
+                </div>
+
+                <!-- FORMULAIRE -->
+                <div class="col-xl-5 col-lg-9 col-12 px-5 mt-xl-5 pt-xl-3">
+
+                  <form>
+                    <div class="form-group mx-2 my-3">
+                      <input type="text" class="form-control" placeholder="Nom & Prénom">
+                    </div>
+
+                    <div class="form-group mx-2 my-3">
+                      <select class="form-control" style="font-family: Poppins, sans-serif;">
+                        <option value="0" hidden>- Activité - </option>
+                        <option value="1">activité 1</option>
+                        <option value="2">activité 2</option>
+                        <option value="3">activité 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group mx-2 my-3">
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="form-group mx-2 my-3">
+                      <input type="number" class="form-control" placeholder="Téléphone">
+                    </div>
+
+                    <div class="form-group mx-2 my-3">
+                      <textarea cols="10" rows="5" class="form-control" placeholder="Votre message"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="modal-footer py-lg-4 px-5 d-flex justify-content-between align-items-center">
+            <button type="button" class=" outline" data-bs-dismiss="modal" aria-label="Close"
+              data-dismiss="modal">Retour</button>
+
+            <button type="button" class="filled">Envoyer la demande</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </header>
   <!-- ========================== -->
   <!--   SECTION-1   -CHIFFRES-   -->
@@ -93,7 +167,7 @@
   <section class="section1">
     <div class="container">
       <div class="row  align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <h3>Dentopus en Chiffres</h3>
           <h2>Des experts du monde entier nous font confiance.</h2>
         </div>
@@ -268,7 +342,7 @@
   <section class="section3">
     <div class="container">
       <div class="row align-items-center my-md-5">
-        <div class="col-lg-6">
+        <div class="col">
           <h3 class="my-md-4">Avantages du cloud</h3>
           <h2 class="my-md-4">Le cloud est un véritable plus pour accroitre l'agilité et la mobilité de ses
             collaborateurs.
@@ -279,7 +353,7 @@
           <a href="#">Découvrir plus</a>
         </div>
 
-        <div class="col-lg-6 d-flex justify-content-center">
+        <div class="col-lg-5 d-flex justify-content-center">
           <img src="svg/section3-cloud/laptop.svg" class="laptop">
         </div>
       </div>
@@ -462,7 +536,7 @@
     <div class="container">
       <!-- title -->
       <div class="d-lg-flex justify-content-between align-items-center">
-        <div class="col-lg-6 pe-lg-5 title">
+        <div class="col-lg-7 pe-lg-5 title">
           <h3>Acutalité </h3>
           <h2>Accroitre l'agilité et la mobilité de ses collaborateurs.</h2>
         </div>
@@ -479,7 +553,7 @@
 
         <!-- carte 1 -->
         <div class="col">
-          <div class="carte5 m-2 row d-flex justify-content-center text-center">
+          <div class="carte5 m-2 pb-3 row d-flex justify-content-center text-center">
             <a href="#"></a>
             <img src="svg/section5-actualité/img-1.svg">
             <div class="ms-3">
@@ -488,7 +562,8 @@
                 <span>Cloud</span>
               </div>
               <h5 class="my-4">Une assurance santé agréée par l'ACPR</h5>
-              <p class="text-start mb-4">Avec 151M€ de fonds propres fin 2021, nous avons 5,4x le capital de solvabilité
+              <p class="text-start mb-4 mx-2">Avec 151M€ de fonds propres fin 2021, nous avons 5,4x le capital de
+                solvabilité
                 requis, contre 2,5x en
                 moyenne dans le secteur.</p>
             </div>
@@ -497,7 +572,7 @@
 
         <!-- carte 2 -->
         <div class="col">
-          <div class="carte5 m-2 row d-flex justify-content-center text-center">
+          <div class="carte5 m-2 pb-3 row d-flex justify-content-center text-center">
             <a href="#"></a>
             <img src="svg/section5-actualité/img-2.svg">
             <div class="ms-3">
@@ -506,7 +581,8 @@
                 <span>Technology</span>
               </div>
               <h5 class="my-4">Un savoir-faire technologique</h5>
-              <p class="text-start mb-4">Nos 150+ ingénieurs, experts tech et des références du monde de l'assurance
+              <p class="text-start mb-4 mx-2">Nos 150+ ingénieurs, experts tech et des références du monde de
+                l'assurance
                 travaillent ensemble pour un meilleur système de santé.</p>
             </div>
           </div>
@@ -514,7 +590,7 @@
 
         <!-- carte 3 -->
         <div class="col">
-          <div class="carte5 m-2 row d-flex justify-content-center text-center">
+          <div class="carte5 m-2 pb-3 row d-flex justify-content-center text-center">
             <a href="#"></a>
             <img src="svg/section5-actualité/img-3.svg">
             <div class="ms-3">
@@ -523,9 +599,8 @@
                 <span>Cloud</span>
               </div>
               <h5 class="my-4">UN ACCOMPAGNEMENT HUMAIN</h5>
-              <p class="text-start mb-4">Avec 151M€ de fonds propres fin 2021, nous avons 5,4x le capital de solvabilité
-                requis, contre 2,5x en
-                moyenne dans le secteur.</p>
+              <p class="text-start mb-4 mx-2">Did you come here for something in particular or just general
+                Riker-bashing</p>
             </div>
           </div>
         </div>

@@ -78,9 +78,57 @@ nav button {
     transition: .2s all ease-in-out;
 }
 
+/* ********************* */
+/*      MODAL           */
+/* ********************* */
+.modal-header {
+    border: none;
+}
 
+.modal-content h2 {
+    line-height: 60px;
+    font-size: 38px;
+}
 
+input::placeholder,
+textarea::placeholder {
+    color: #004366 !important;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+}
 
+.modal-content p {
+    font-size: var(--fs-medium);
+    line-height: 23px;
+}
+
+.modal-content textarea {
+    resize: none;
+}
+
+.modal-footer {
+    background: #F9FCFE;
+}
+
+.modal-body input,
+.modal-body select,
+.modal-body textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #19C6DB;
+    transition: 0.1s;
+    outline: none;
+}
+
+.modal-body input:focus,
+.modal-body select:focus,
+.modal-body textarea:focus {
+    border: 1px solid #19C6DB;
+    box-shadow: 0 0px 10px rgba(25, 200, 219, 0.429);
+}
 
 
 /* ********************* */
@@ -105,14 +153,23 @@ h3 {
     line-height: 2rem;
 }
 
-header button {
+header .filled {
     padding: .8rem 2.1rem;
     background-color: var(--blue-900-primary);
     border: 1px solid var(--blue-900-primary);
     color: #fff;
     border-radius: 5px;
-    margin-bottom: 3rem;
     transition: .2s all ease;
+}
+
+header .outline {
+    border-radius: 5px;
+    border: 1px solid var(--blue-900-primary);
+    padding: .8rem 2.1rem;
+}
+
+.btn-holder .filled {
+    margin-bottom: 3rem;
 }
 
 header button:hover {
@@ -326,7 +383,8 @@ section {
 .carte4 p {
     font-weight: var(--fw-light);
     font-size: var(--fs-extra-extra-small);
-    line-height: 21px;
+    line-height: 18px;
+    color: #000;
 }
 
 
@@ -381,6 +439,12 @@ section {
 
 .carte5 h5 {
     text-align: start;
+}
+
+.carte5 p {
+    font-size: var(--fs-extra-extra-small);
+    font-weight: var(--fw-regular);
+    line-height: 21px;
 }
 
 .section-gap {

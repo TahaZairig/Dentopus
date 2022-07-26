@@ -13,6 +13,19 @@
   box-sizing: border-box;
 }
 
+input::placeholder,
+textarea::placeholder,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+a {
+  font-family: Poppins, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +56,15 @@ a:not([class]) {
   box-shadow: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 button,
 input[type="submit"],
@@ -84,8 +106,16 @@ select {
    43px - 2.75rem
    60px - 3.75rem*/
 
-
 :root {
+  /* font-size */
+  --fs-extra-large: 3.75rem;
+  --fs-large: 2.75rem;
+  --fs-semi-large: 1.5rem;
+  --fs-medium: 1.125rem;
+  --fs-small: 1rem;
+  --fs-extra-small: 0.875rem;
+  --fs-extra-extra-small: 0.75rem;
+
   /* colos */
   --blue-900-primary: #004366;
   --blue-600: #4E9CDB;
@@ -102,15 +132,6 @@ select {
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
-
-  /* font-size */
-  --fs-extra-large: 3.75rem;
-  --fs-large: 2.75rem;
-  --fs-semi-large: 1.5rem;
-  --fs-medium: 1.125rem;
-  --fs-small: 1rem;
-  --fs-extra-small: 0.875rem;
-  --fs-extra-extra-small: 0.75rem;
 
   /* buttons */
   --fs-button-small: var(--fs-extra-small);
@@ -154,7 +175,15 @@ p {
   color: var(--gray-900);
 }
 
+*:focus {
+  outline: none !important;
+}
 
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 /* SVG */
 .logo {
