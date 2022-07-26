@@ -230,7 +230,6 @@ section {
 /* ********************* */
 /*      Section  3       */
 /* ********************* */
-
 /* card */
 .carte2 {
     background: #fff;
@@ -252,14 +251,14 @@ section {
     font-size: var(--fs-medium);
 }
 
+
 /* ********************* */
 /*      Section  4       */
 /* ********************* */
-
 .section4 {
     background: #19C6DB;
     padding-bottom: 5%;
-    margin-top: -10%;
+    margin-top: -13%;
     margin-bottom: -5%;
 }
 
@@ -273,90 +272,6 @@ section {
     line-height: 50px;
     color: #fff;
 }
-
-.section4 .col {
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
-/* card */
-.carte3 {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 67, 102, 0.1);
-}
-
-.carte3 h4 {
-    color: var(--blue-900-primary);
-    text-align: center;
-    padding: 22px 40px;
-    font-size: var(--fs-semi-large);
-    line-height: 36px;
-    font-weight: var(--fs-medium);
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid transparent;
-}
-
-
-.recommanded {
-    color: #fff !important;
-    background: var(--blue-900-primary);
-    border: 1px solid var(--blue-900-primary);
-}
-
-/* ------------------------- */
-
-.carte3 h5 {
-    color: var(--blue-300-secondary);
-    font-size: 2.25rem;
-    font-weight: var(--fw-semi-bold);
-}
-
-.carte3 ul {
-    list-style: none;
-    margin-left: 10%;
-}
-
-.carte3 ul li::before {
-    content: ".";
-    font-size: 3rem;
-    margin-bottom: -1rem;
-    color: var(--blue-300-secondary);
-    font-weight: bold;
-    display: inline-block;
-    width: 10%;
-    margin-top: -10px;
-    margin-left: -30px;
-}
-
-
-.carte3 li {
-    font-size: var(--fs-medium);
-    color: var(--blue-900-primary);
-    font-weight: var(--fw-regular);
-    line-height: 27px;
-}
-
-.carte3 button {
-    text-decoration: none;
-    color: var(--blue-900-primary);
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-medium);
-    line-height: 27px;
-    border: 1px solid var(--blue-900-primary);
-    border-radius: 4px;
-    padding: .8rem 2.1rem;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* ********************* */
-/*      Section  5       */
-/* ********************* */
 
 /* slider */
 .slider,
@@ -416,10 +331,10 @@ section {
 
 
 /* ********************* */
-/*      Section  6       */
+/*      Section  5       */
 /* ********************* */
 
-.section6 {
+.section5 {
     background: #E2F0FB;
     margin-top: -5%;
     margin-bottom: -5%;
