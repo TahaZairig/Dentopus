@@ -132,6 +132,12 @@ body {
   --fs-extra-small: 0.85rem;
   --fs-extra-extra-small: 0.75rem;
 
+  /* line height */
+  --lh-large: 4rem;
+  --lh-semi-large: 2rem;
+  --lh-medium: 1.6rem;
+  --lh-small: 1.125rem;
+
   /* colos */
   --blue-900-primary: #004366;
   --blue-600: #4e9cdb;
@@ -147,12 +153,6 @@ body {
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
-
-  /* line height */
-  --lh-small: 1.125rem;
-  --lh-medium: 1.6rem;
-  --lh-semi-large: 2rem;
-  --lh-large: 4rem;
 
   /* buttons */
   --fs-button-small: var(--fs-extra-small);

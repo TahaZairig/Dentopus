@@ -75,6 +75,23 @@
     .section-gap {
         height: 80px;
     }
+
+    :root {
+        /* font size */
+        --fs-extra-large: 2.25rem;
+        --fs-large: 2.25rem;
+        --fs-semi-large: 1.5rem;
+        --fs-medium: 1rem;
+        --fs-small: 0.875rem;
+        --fs-extra-small: 0.875rem;
+        --fs-extra-extra-small: 0.75rem;
+
+        /* line height */
+        --lh-large: 3rem;
+        --lh-semi-large: 1.95rem;
+        --lh-medium: 1.5rem;
+        --lh-small: 1.25rem;
+    }
 }
 
 @media (max-width: 767px) {
