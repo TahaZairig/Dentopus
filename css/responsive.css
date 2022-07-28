@@ -1,6 +1,6 @@
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
-        scroll-behavior: auto;
+        scroll-behavior: smooth;
     }
 
     *,
@@ -33,9 +33,7 @@
 
 @media (max-width: 1130px) {
 
-    /* ********************* */
     /*      navigation       */
-    /* ********************* */
     .logo {
         width: 160px;
     }
@@ -63,6 +61,13 @@
         display: none;
     }
 
+    .cloud1 {
+        margin-top: -60px;
+        opacity: 0.5;
+        display: block;
+        z-index: -5;
+    }
+
     .section6.title {
         margin-top: -50px;
     }
@@ -85,7 +90,17 @@
 @media (max-width: 596px) {
     header {
         margin-top: 9rem;
-        height: 80vh;
+        margin-bottom: 11.5rem;
+    }
+
+    h2 {
+        line-height: var(--lh-semi-large);
+        font-size: var(--fs-semi-large);
+    }
+
+    h3 {
+        line-height: var(--lh-medium);
+        font-size: var(--fs-medium);
     }
 
     .section4 {
@@ -133,8 +148,8 @@
         --fs-semi-large: 1.5rem;
         --fs-medium: 1rem;
         --fs-small: 0.875rem;
-        --fs-extra-small: 0.75rem;
-        --fs-extra-extra-small: 0.65rem;
+        --fs-extra-small: 0.875rem;
+        --fs-extra-extra-small: 0.75rem;
 
         /* line height */
         --lh-large: 2.5rem;
