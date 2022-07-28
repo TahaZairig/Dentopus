@@ -37,8 +37,8 @@ a {
   font: inherit;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -67,7 +67,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -123,20 +123,25 @@ select {
 
   /* colos */
   --blue-900-primary: #004366;
-  --blue-600: #4E9CDB;
-  --blue-300-secondary: #19C6DB;
-  --blue-100: #48EBDC;
-  --gray-900: #8F8F8F;
-  --gray-700: #849DB7;
-  --gray-100: #E2F0FB;
+  --blue-600: #4e9cdb;
+  --blue-300-secondary: #19c6db;
+  --blue-100: #48ebdc;
+  --gray-900: #8f8f8f;
+  --gray-700: #849db7;
+  --gray-100: #e2f0fb;
 
   /* font-weight */
-  font-family: Poppins, 'sans-serif';
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+
+  /* line height */
+  --lh-small: 1.125rem;
+  --lh-medium: 1.6rem;
+  --lh-semi-large: 2rem;
+  --lh-large: 4rem;
 
   /* buttons */
   --fs-button-small: var(--fs-extra-small);
@@ -181,7 +186,7 @@ p {
 }
 
 button {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 *:focus {
@@ -221,8 +226,6 @@ button {
   z-index: -10;
 }
 
-
-
 .waved-cloud {
   width: 100%;
   height: auto;
@@ -252,14 +255,11 @@ button {
   width: 100%;
 }
 
-
 .smile-face,
 .done,
 .cabinet {
   width: 5rem;
-
 }
-
 
 .sction2 img {
   width: 90px;
@@ -277,7 +277,7 @@ button {
 
 /* button */
 button {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /* cards */
@@ -296,12 +296,8 @@ button {
 .carte3,
 .carte4,
 .carte5 {
-  transition: all .125s ease-in-out;
+  transition: all 0.125s ease-in-out;
 }
-
-
-
-
 
 /* keyframes */
 @keyframes floating1 {

@@ -13,10 +13,6 @@
     }
 }
 
-
-
-
-
 @media (max-width: 1200px) {
     .cloud3 {
         top: 32rem;
@@ -33,7 +29,6 @@
         width: 27.75rem;
         top: 27rem;
     }
-
 }
 
 @media (max-width: 1130px) {
@@ -46,18 +41,16 @@
     }
 
     a.nav-link {
-        margin-left: .4rem;
-        margin-right: .4rem;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
     }
 
     nav button {
-        padding: .8rem 1.4rem;
+        padding: 0.8rem 1.4rem;
     }
 }
 
-
 @media (max-width: 991px) {
-
     a.nav-link {
         text-align: center;
     }
@@ -77,8 +70,6 @@
     .section-gap {
         height: 80px;
     }
-
-
 }
 
 @media (max-width: 767px) {
@@ -89,10 +80,21 @@
     header {
         margin-top: 7rem;
     }
-
 }
 
 @media (max-width: 596px) {
+    header {
+        height: 100vh;
+    }
+
+    .waves {
+        display: none;
+    }
+
+    .section1 {
+        margin-top: -150px;
+    }
+
     .carte2 {
         width: 400px;
     }
@@ -100,5 +102,39 @@
     .card-deck {
         display: flex;
         justify-content: center;
+    }
+
+    .modal-content h2 {
+        line-height: var(--lh-semi-large);
+        font-size: var(--fs-semi-large);
+    }
+
+    .modal-content {
+        margin-top: -5px;
+    }
+
+    .modal-content p {
+        margin-bottom: 5px;
+    }
+
+    .modal-content .filled {
+        width: 100%;
+    }
+
+    :root {
+        /* font size */
+        --fs-extra-large: 2.75rem;
+        --fs-large: 2rem;
+        --fs-semi-large: 1.5rem;
+        --fs-medium: 1rem;
+        --fs-small: 0.875rem;
+        --fs-extra-small: 0.75rem;
+        --fs-extra-extra-small: 0.65rem;
+
+        /* line height */
+        --lh-large: 2.5rem;
+        --lh-semi-large: 1.95rem;
+        --lh-medium: 1.5rem;
+        --lh-small: 1.25rem;
     }
 }
