@@ -84,7 +84,12 @@
 
 @media (max-width: 596px) {
     header {
-        height: 100vh;
+        margin-top: 9rem;
+        height: 80vh;
+    }
+
+    .section4 {
+        margin-top: -19%;
     }
 
     .waves {
