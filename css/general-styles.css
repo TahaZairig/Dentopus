@@ -29,6 +29,7 @@ p,
 button,
 a {
   font-family: Poppins, sans-serif;
+  font-display: swap;
 }
 
 * {
@@ -42,7 +43,8 @@ ol[role="list"] {
   list-style: none;
 }
 
-html:focus-within {
+html,
+body {
   scroll-behavior: smooth;
 }
 

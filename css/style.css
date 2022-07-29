@@ -413,7 +413,8 @@ header .filled {
 }
 
 .carte5 img {
-    width: 110% !important;
+    width: 110%;
+    height: auto;
     padding: 0px;
 }
 

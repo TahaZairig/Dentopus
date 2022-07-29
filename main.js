@@ -9,7 +9,6 @@ import './css/responsive.css'
 
 
 
-/* Auto slidshow */
 window.requestAnimFrame = (function () {
     return (
         window.requestAnimationFrame ||
@@ -39,7 +38,6 @@ const sliderWidth = slider.offsetWidth;
 const sumIsLargerThanSlider = sliderWidth >= widthWrap + sliderWidth;
 const iterationItems = Math.ceil((widthWrap + sliderWidth) / sliderWidth);
 
-// Clone number of slider
 if (iterationItems > 1) {
     for (let i = 0; i < iterationItems - 1; i++) {
         const clone = slider.cloneNode(true);
@@ -48,12 +46,10 @@ if (iterationItems > 1) {
     getSliderList();
 }
 
-// Array of the state of each item
 let stateList = sliderList.map((item, i) => {
     let pos = 0;
     let start = false;
 
-    // The slide to start fully at left
     if (i < iterationItems - 1) {
         pos = -widthWrap + sliders[i].offsetWidth * i;
         start = true;
@@ -65,7 +61,6 @@ let stateList = sliderList.map((item, i) => {
     };
 });
 
-// logic animation for sliding each item at a time
 const translate = () => {
     for (let i = 0; i < sliderList.length; i++) {
         const slider = sliderList[i];
@@ -73,7 +68,6 @@ const translate = () => {
         const nextIndex = i != sliderList.length - 1 ? i + 1 : 0;
         let pos;
 
-        // if slider should be in movement
         if (stateList[i].start) {
             stateList[i].pos -= 1;
             pos = stateList[i].pos;
@@ -83,11 +77,9 @@ const translate = () => {
         const isComplete = pos <= -sliderWidth;
         const isOutSeen = pos <= -widthWrap - sliderWidth;
 
-        // if the slider is fully on screen
         if (isComplete) {
             stateList[nextIndex].start = true;
         }
-        // if the slider finished crossing the slider and has disappeared
         if (isOutSeen) {
             stateList[i].start = false;
             stateList[i].pos = 0;
@@ -111,18 +103,4 @@ wrapSlider.addEventListener("mouseout", () => {
 });
 start();
 
-
-/* octopus scroll */
-/* var lastScrollPosition = 0;
-window.addEventListener('scroll', function (e) {
-    lastScrollPosition = window.scrollY;
-    var octopus = this.document.getElementById('octopus');
-    var headerHeight = this.document.getElementsByTagName('header').item(0)
-    headerHeight = headerHeight.offsetHeight + 20
-    console.log(lastScrollPosition);
-
-    if (lastScrollPosition < headerHeight) {
-        octopus.style.transform = "translate(" + lastScrollPosition / -2 + "px, " + lastScrollPosition + "px)";
-    }
-}); */
 
